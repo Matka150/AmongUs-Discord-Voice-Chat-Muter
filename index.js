@@ -14,7 +14,7 @@ client.on('messageCreate', (message) => {
         if (!message.member.permissions.has("ADMINISTRATOR")) return;
             let channel = message.member.voice.channel;
             for (let member of channel.members) {
-                if (member[1].voice.mute) {
+                if (member[1].voice.serverMute) {
                     member[1].voice.setMute(false);
                 } else {
                     member[1].voice.setMute();
