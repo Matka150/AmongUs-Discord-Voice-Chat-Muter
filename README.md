@@ -5,7 +5,7 @@ Bot that mutes everyone in voice chat. !emute is the command.
 ### Prerequisites:
 Install <a href="https://nodejs.org/en/">NodeJS</a>.<br />
 
-## Installation:
+### Installation:
 1. Clone the repo:
 ```
 git clone https://github.com/Matka150/AmongUs-Discord-Voice-Chat-Muter.git
