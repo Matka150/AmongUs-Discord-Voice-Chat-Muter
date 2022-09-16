@@ -3,7 +3,7 @@ Bot that mutes everyone in voice chat. !emute is the command.
 
 ## Manual Installation:
 ### Prerequisites:
-Install <a href="https://nodejs.org/en/">NodeJS</a>.<br />
+Install <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>.<br />
 
 ### Installation:
 1. Clone the repo:
