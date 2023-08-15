@@ -14,11 +14,9 @@ client.on('messageCreate', (message) => {
         if (!message.member.permissions.has("ADMINISTRATOR")) return;
         const flag = !(message.member.voice.serverMute);
         let channel = message.member.voice.channel;
-        var i = 0, len = channel.members.length;
-        while (i < len) {
-            member.voice.setMute(flag);
-            i++
-        }
+
+            channel.members.forEach(member => member.voice.setMute(flag));
+        
     }
 });
 
