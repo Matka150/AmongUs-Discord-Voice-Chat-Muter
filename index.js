@@ -10,13 +10,15 @@ client.once('ready', async () => {
 });
 
 client.on('messageCreate', (message) => {
+    let flag;
     if (message.content.toLowerCase() == '!emute') {
         if (!message.member.permissions.has("ADMINISTRATOR")) return;
-            let channel = message.member.voice.channel;
-            channel.members.forEach(member => {
-                member.voice.setMute(!(member.voice.serverMute));
-            });
-        }
+        flag = !(message.member.voice.serverMute);
+        let channel = message.member.voice.channel;
+        channel.members.forEach(member => {
+            member.voice.setMute(flag);
+        });
+    }
 });
 
 client.login(process.env.token);
