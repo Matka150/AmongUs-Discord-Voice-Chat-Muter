@@ -15,7 +15,7 @@ client.on('messageCreate', (message) => {
         const flag = !(message.member.voice.serverMute);
         let channel = message.member.voice.channel;
 
-            channel.members.forEach(member => member.voice.setMute(flag));
+        channel.members.forEach(member => member.voice.setMute(flag));
         
     }
 });
